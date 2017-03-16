@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -36,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="conjectureCell" rowHeight="89" id="Ff5-YK-TE0" customClass="ConjectureTableViewCell" customModule="Resolver" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="conjectureCell" rowHeight="89" id="Ff5-YK-TE0" customClass="ConjectureTableViewCell" customModule="Resolver" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ff5-YK-TE0" id="5oD-St-Pbh">
@@ -44,19 +43,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ∧ B ⊢ B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ocq-d9-Kcl">
-                                                    <rect key="frame" x="8" y="29.5" width="321" height="29"/>
+                                                    <rect key="frame" x="8" y="29.5" width="331" height="29"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NATURAL DEDUCTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-7t-M9d">
-                                                    <rect key="frame" x="8" y="67" width="321" height="13"/>
+                                                    <rect key="frame" x="8" y="67" width="331" height="13"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="WwI-kL-LVk">
-                                                    <rect key="frame" x="337" y="29" width="30" height="30"/>
+                                                    <rect key="frame" x="347" y="60" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="WwI-kL-LVk" secondAttribute="height" multiplier="1:1" id="vZv-6t-UdU"/>
                                                     </constraints>
@@ -64,20 +63,21 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="iGg-7t-M9d" firstAttribute="trailing" secondItem="ocq-d9-Kcl" secondAttribute="trailing" id="9P3-4g-4Z3"/>
+                                                <constraint firstAttribute="bottom" secondItem="WwI-kL-LVk" secondAttribute="bottom" constant="8" id="FCm-EI-KPf"/>
+                                                <constraint firstItem="WwI-kL-LVk" firstAttribute="top" secondItem="5oD-St-Pbh" secondAttribute="top" constant="60" id="GBU-RH-i7B"/>
                                                 <constraint firstItem="iGg-7t-M9d" firstAttribute="leading" secondItem="ocq-d9-Kcl" secondAttribute="leading" id="Gvf-mR-vVa"/>
-                                                <constraint firstItem="WwI-kL-LVk" firstAttribute="top" secondItem="5oD-St-Pbh" secondAttribute="topMargin" constant="21" id="Jra-Es-8cC"/>
                                                 <constraint firstItem="ocq-d9-Kcl" firstAttribute="leading" secondItem="5oD-St-Pbh" secondAttribute="leading" constant="8" id="TOL-HE-u6b"/>
                                                 <constraint firstAttribute="trailing" secondItem="WwI-kL-LVk" secondAttribute="trailing" constant="8" id="Uqj-LH-C8D"/>
                                                 <constraint firstItem="ocq-d9-Kcl" firstAttribute="centerY" secondItem="5oD-St-Pbh" secondAttribute="centerY" id="b7X-TW-w8L"/>
                                                 <constraint firstItem="WwI-kL-LVk" firstAttribute="leading" secondItem="ocq-d9-Kcl" secondAttribute="trailing" constant="8" id="q8F-5Y-7Q8"/>
                                                 <constraint firstAttribute="bottom" secondItem="iGg-7t-M9d" secondAttribute="bottom" constant="8" id="sXt-dQ-k8U"/>
-                                                <constraint firstItem="WwI-kL-LVk" firstAttribute="centerY" secondItem="5oD-St-Pbh" secondAttribute="centerY" id="tbE-om-zY0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="completeImageView" destination="WwI-kL-LVk" id="GHv-df-peF"/>
                                             <outlet property="conjectureLabel" destination="ocq-d9-Kcl" id="teW-M3-0nP"/>
                                             <outlet property="conjectureLogicLabel" destination="iGg-7t-M9d" id="Klm-Zq-dM9"/>
+                                            <segue destination="mFs-zk-2El" kind="show" identifier="toProofView" trigger="accessoryAction" id="5eE-ag-tgs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -100,6 +100,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1167.2" y="120.98950524737631"/>
+        </scene>
+        <!--Proof View Controller-->
+        <scene sceneID="sm5-xd-mqp">
+            <objects>
+                <viewController id="mFs-zk-2El" customClass="ProofViewController" customModule="Resolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kAM-td-t65"/>
+                        <viewControllerLayoutGuide type="bottom" id="o6c-uE-zxS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KHq-ZY-KIL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjp-uS-JYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="501"/>
         </scene>
         <!--Conjecture Creator View Controller-->
         <scene sceneID="Ncz-jj-a0d">
@@ -172,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnf-fU-niB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942" y="121"/>
+            <point key="canvasLocation" x="1964" y="-169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fUI-sC-4sP">

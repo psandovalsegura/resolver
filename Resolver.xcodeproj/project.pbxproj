@@ -24,6 +24,7 @@
 		817CCE041E78C80000271CC3 /* ConjectureCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CCE031E78C80000271CC3 /* ConjectureCreatorViewController.swift */; };
 		817CCE071E78C9F500271CC3 /* SymbolsKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CCE061E78C9F500271CC3 /* SymbolsKeyboardView.swift */; };
 		817CCE091E78CA4800271CC3 /* SymbolsKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817CCE081E78CA4800271CC3 /* SymbolsKeyboardView.xib */; };
+		81E9117A1E7A560400553148 /* ProofViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E911791E7A560400553148 /* ProofViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		817CCE031E78C80000271CC3 /* ConjectureCreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConjectureCreatorViewController.swift; sourceTree = "<group>"; };
 		817CCE061E78C9F500271CC3 /* SymbolsKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolsKeyboardView.swift; sourceTree = "<group>"; };
 		817CCE081E78CA4800271CC3 /* SymbolsKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymbolsKeyboardView.xib; sourceTree = "<group>"; };
+		81E911791E7A560400553148 /* ProofViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProofViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				817CCDEB1E78BDA000271CC3 /* ConjecturesViewController.swift */,
 				817CCE031E78C80000271CC3 /* ConjectureCreatorViewController.swift */,
+				81E911791E7A560400553148 /* ProofViewController.swift */,
 				817CCDFD1E78C36800271CC3 /* Models */,
 				817CCE051E78C8CE00271CC3 /* Controls */,
 				817CCDED1E78BE6F00271CC3 /* Views */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817CCDEF1E78BE8500271CC3 /* ConjectureTableViewCell.swift in Sources */,
+				81E9117A1E7A560400553148 /* ProofViewController.swift in Sources */,
 				817CCE041E78C80000271CC3 /* ConjectureCreatorViewController.swift in Sources */,
 				817CCE021E78C47400271CC3 /* Logic.swift in Sources */,
 				817CCE071E78C9F500271CC3 /* SymbolsKeyboardView.swift in Sources */,
@@ -349,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5HLDUZFLDY;
 				INFOPLIST_FILE = Resolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandovalsoftware.Resolver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5HLDUZFLDY;
 				INFOPLIST_FILE = Resolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandovalsoftware.Resolver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +394,7 @@
 				817CCDE91E78BD3000271CC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

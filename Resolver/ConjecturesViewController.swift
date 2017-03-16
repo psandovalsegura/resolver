@@ -16,6 +16,7 @@ class ConjecturesViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var tableView: UITableView!
     var conjectures: [Conjecture] = [Conjecture]()
+    var selectedConjecture: Conjecture?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,7 @@ class ConjecturesViewController: UIViewController, UITableViewDelegate, UITableV
     }
 
     @IBAction func onAddConjecture(_ sender: Any) {
-        performSegue(withIdentifier: "toConjectureCreator", sender: nil)
+        self.performSegue(withIdentifier: "toConjectureCreator", sender: nil)
     }
     
     func addConjecture(conjecture: Conjecture) {
@@ -58,7 +59,10 @@ class ConjecturesViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedConjecture = self.conjectures[indexPath.row]
+        self.performSegue(withIdentifier: "toProofView", sender: nil)
+    }
     
     // MARK: - Navigation
 
@@ -66,8 +70,14 @@ class ConjecturesViewController: UIViewController, UITableViewDelegate, UITableV
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let conjectureCreatorVC = segue.destination as! ConjectureCreatorViewController
-        conjectureCreatorVC.delegate = self
+        if segue.identifier == "toConjectureCreator" {
+            let conjectureCreatorVC = segue.destination as! ConjectureCreatorViewController
+            conjectureCreatorVC.delegate = self
+        } else if segue.identifier == "toProofView" {
+            let proofVC = segue.destination as! ProofViewController
+            proofVC.conjectureToProve = self.selectedConjecture
+        }
+        
     }
 
 }
