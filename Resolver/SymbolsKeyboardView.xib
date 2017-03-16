@@ -16,17 +16,17 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="343" height="105"/>
+            <rect key="frame" x="0.0" y="0.0" width="304" height="105"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A5j-9y-edC">
-                    <rect key="frame" x="0.0" y="0.0" width="343" height="105"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A5j-9y-edC">
+                    <rect key="frame" x="0.0" y="0.0" width="304" height="105"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddp-a5-aFJ">
-                            <rect key="frame" x="154" y="0.0" width="35" height="45"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ddp-a5-aFJ">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="45"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek0-aF-aJm">
-                                    <rect key="frame" x="0.0" y="0.0" width="35" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="304" height="45"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                     <state key="normal" title="⊢">
                                         <color key="titleColor" red="0.0" green="0.72941176470000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,11 +37,11 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mgQ-7P-adQ">
-                            <rect key="frame" x="14" y="45" width="316" height="60"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mgQ-7P-adQ">
+                            <rect key="frame" x="0.0" y="45" width="304" height="60"/>
                             <subviews>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKs-Ye-hSy">
-                                    <rect key="frame" x="0.0" y="0.0" width="34" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="49" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <state key="normal" title="→"/>
                                     <connections>
@@ -49,7 +49,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i98-cf-rxf">
-                                    <rect key="frame" x="59" y="0.0" width="30" height="60"/>
+                                    <rect key="frame" x="51" y="0.0" width="49" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <state key="normal" title="∧"/>
                                     <connections>
@@ -57,7 +57,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-4c-AbN">
-                                    <rect key="frame" x="114" y="0.0" width="30" height="60"/>
+                                    <rect key="frame" x="102" y="0.0" width="49" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <state key="normal" title="∨"/>
                                     <connections>
@@ -65,7 +65,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rm-hu-bc7">
-                                    <rect key="frame" x="169" y="0.0" width="30" height="60"/>
+                                    <rect key="frame" x="153" y="0.0" width="49" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <state key="normal" title="¬"/>
                                     <connections>
@@ -73,7 +73,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cld-WA-dmD">
-                                    <rect key="frame" x="224" y="0.0" width="32" height="60"/>
+                                    <rect key="frame" x="204" y="0.0" width="49" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <state key="normal" title="⊥"/>
                                     <connections>
@@ -81,7 +81,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qo-dw-CIt">
-                                    <rect key="frame" x="281" y="0.0" width="35" height="60"/>
+                                    <rect key="frame" x="255" y="0.0" width="49" height="60"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <state key="normal" title="⊤"/>
                                     <connections>
@@ -101,7 +101,7 @@
                 <constraint firstItem="A5j-9y-edC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gTV-dy-L59"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="72" y="-568"/>
+            <point key="canvasLocation" x="62" y="-568.5"/>
         </view>
     </objects>
 </document>

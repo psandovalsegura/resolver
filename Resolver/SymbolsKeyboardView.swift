@@ -20,6 +20,7 @@ class SymbolsKeyboardView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         Bundle.main.loadNibNamed("SymbolsKeyboardView", owner: self, options: nil)
+        view.frame = self.bounds //Constrain the UIView to the Symbols Keyboard view
         self.addSubview(view)
     }
     
