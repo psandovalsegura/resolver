@@ -11,7 +11,7 @@ import Foundation
 class Logic {
     var name: String?
     
-    init(name: String) {
+    init(name: String = "Natural Deduction") {
         self.name = name
     }
 }

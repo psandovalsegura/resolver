@@ -48,13 +48,18 @@ class ConjectureCreatorViewController: UIViewController, UITextFieldDelegate, Sy
         }
     }
     
+    func validConjecture(_ conjecture: Conjecture) -> Bool {
+        return true
+    }
+    
     @IBAction func onDone(_ sender: Any) {
-        dismiss(animated: true) { 
+        dismiss(animated: true) {
             // TODO: Save conjecture to the array of conjectures
             // TODO: Figure out if the conjecture is valid
-            let defaultLogic = Logic(name: "Natural Deduction")
-            let newConjecture = Conjecture(conjecture: self.textField.text!, logic: defaultLogic, solved: false)
-            self.delegate?.addConjecture(conjecture: newConjecture)
+            let newConjecture = Conjecture(conjecture: self.textField.text!, logic: Logic(), solved: false)
+            if self.validConjecture(newConjecture) {
+                self.delegate?.addConjecture(conjecture: newConjecture)
+            }
         }
     }
     
