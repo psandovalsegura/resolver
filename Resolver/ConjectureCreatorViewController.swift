@@ -53,6 +53,9 @@ class ConjectureCreatorViewController: UIViewController, UITextFieldDelegate, Sy
     }
     
     @IBAction func onDone(_ sender: Any) {
+        // Withdraw keyborad before dismissing ConjectureCreatorViewController
+        textField.resignFirstResponder()
+        
         dismiss(animated: true) {
             // TODO: Save conjecture to the array of conjectures
             // TODO: Figure out if the conjecture is valid
